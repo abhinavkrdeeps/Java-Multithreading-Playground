@@ -8,7 +8,8 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- *  In Java , 1 Java Thread is equal to 1 os (Operating System) Thread. So Creating very large number
+ *  In Java ,
+ *  1 Java Thread is equal to 1 os (Operating System) Thread. So Creating very large number
  *  of threads is not feasible as well as gives poor performance.
  *  As a Solution we can Use ExecutorService which is a kind of thread Pool maintains a limited number
  *  of thread to do multiple Tasks.
@@ -19,7 +20,7 @@ import java.util.concurrent.TimeUnit;
  *
  *
  *                                                  Thread Pool
- *                        ------------------------------------------------------------------------
+ *                        -----------------------------------------------------------------------
  *                        |           Blocking Queue (Thread Safe )
  *                        |      -----------------------------------------------------------------
  *                        |             Task 1 |   Task 2               |
@@ -41,6 +42,7 @@ import java.util.concurrent.TimeUnit;
  *        scheduler.
  *
  *        How to choose ideal pool size.
+ *        ---------------------------------------------------------------------------------------------------------
  *        -- Depends on use case.
  *        If task is IO intensive (Calls to db), then pool size should be large as multiple
  *        threads goes in waiting condition.

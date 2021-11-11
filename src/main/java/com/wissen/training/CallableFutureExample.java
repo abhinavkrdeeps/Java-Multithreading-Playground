@@ -31,7 +31,7 @@ public class CallableFutureExample {
 
         // Retrieving the value
         for(Future<Integer> future: futures){
-            System.out.println("Value : " +future.get()); // A Blocking Operation. 
+            System.out.println("Value : " +future.get()); // A Blocking Operation.
         }
     }
 }
